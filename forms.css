@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(212, 235, 235);
+}
+.container {
+  background-color: aquamarine;
+  font-size: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 4px;
+  /*transition-delay: 2s;*/
+  transition: all 3s 1s linear;
+  text-align: center;
+}
+.container:hover {
+  height: 500px;
+  width: 500px;
+  background-color: blue;
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 70%;
+  transform: rotate(360deg);
+}
+.container p:hover::first-letter {
+  color: cyan;
+  background-color: rgb(42, 36, 36);
+  padding: 4px;
+}
+.container p::first-line {
+  color: black;
+  background-color: rgb(229, 222, 213);
+  letter-spacing: 0.3em;
+  word-spacing: 0.7em;
+  text-decoration: underline overline dotted olive;
+}
+h1::after {
+  content: " icon";
+}
+::selection {
+  color: rgb(212, 235, 235);
+  background-color: purple;
+}
+::placeholder {
+  color: bisque;
+  border-radius: 5px;
+  background-color: black;
+}
